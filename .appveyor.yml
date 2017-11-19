@@ -41,7 +41,7 @@ environment:
   gist_id_test: 231af19151d1954df06074b80cf14c48
 
   # Chocolatey API key - to push updated packages
-  api_key: TODO Replace me.
+  api_key:
     secure: GYRrHbEXSsP3G2Fq/mCRLUwbfYr+FnwSuIYAetepWLNWeRS+2QJsPMtlss6w1pIc
 
 init:
