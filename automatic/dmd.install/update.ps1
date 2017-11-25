@@ -1,30 +1,24 @@
 Import-Module au
 
-$RootUrl = 'http://downloads.dlang.org'
-$ReleasesUrl = "$RootUrl/releases/2.x"
-
 function global:au_SearchReplace {
     @{
         'tools\ChocolateyInstall.ps1' = @{
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
         }
     }
 }
 
 function global:au_GetLatest {
-    $Releases = Invoke-WebRequest -Uri $ReleasesUrl
-    $RelativeUrl = ($Releases.Links | ? href -Match '2.x/' | select -First 2 -Expand href)[1]
+    $VersionUrl = 'http://downloads.dlang.org/releases/LATEST'
+    $Response = Invoke-WebRequest -Uri $VersionUrl
+    $Version = [char[]]$Response.Content -join ''
 
-    if($RelativeUrl -match '(\d.\d{3}.\d)')
-    {
-        $Version = $Matches[1]
-        $Url = "${RootUrl}${RelativeUrl}dmd-$Version.exe"
+    $Url = "http://downloads.dlang.org/releases/2.x/$Version/dmd-$Version.exe"
 
-        $Latest = @{ URL32 = $Url; Version = $Version }
-    }
-
+    $Latest = @{ URL32 = $Url; Version = $Version }
     return $Latest
 }
 
-update
+update -ChecksumFor 32
