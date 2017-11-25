@@ -20,18 +20,18 @@ environment:
 
   # Github token to commit pushed packages to repository
   github_user_repo: Manuzor/chocolatey-packages
-  #github_api_key:
-  #  secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+  github_api_key:
+    secure: Hju6USJlBFyHqvyl/iVEf93ACKWm7hlF89C1CpcmKXfJolHviQZEH3vsm1Y8X8NE
 
 
   # Mail credentials - for error notifications
-  # mail_user:
-  #   secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
-  # mail_pass:
-  #   secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
-  # mail_server: smtp.gmail.com
-  # mail_port: 587
-  # mail_enablessl: true
+  mail_user:
+    secure: wQs6tWWKiyfrWsfK/6AQOqHv5EXXXpOrYQ+LWWDLOEQ=
+  mail_pass:
+    secure: H05nS5anSv3Nm9Avlyy7fsQamf4y2FGijH7WJ67tLvM
+  mail_server: smtp.gmail.com
+  mail_port: 587
+  mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
