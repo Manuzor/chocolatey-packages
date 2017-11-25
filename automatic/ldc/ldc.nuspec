@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ldc</id>
+    <version>1.4.0</version>
+    <packageSourceUrl>https://github.com/Manuzor/chocolatey-packages</packageSourceUrl>
+    <owners>Manuel Maier</owners>
+
+    <title>ldc</title>
+    <authors>LDC contributors</authors>
+    <projectUrl>https://wiki.dlang.org/LDC</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/Manuzor/chocolatey-packages/master/icons/compiler-ldc.png</iconUrl>
+    <copyright>Copyright (c) 2007-2017 LDC Team</copyright>
+    <projectSourceUrl>https://github.com/ldc-developers/ldc</projectSourceUrl>
+    <docsUrl>https://wiki.dlang.org/LDC</docsUrl>
+    <bugTrackerUrl>https://github.com/ldc-developers/ldc/issues</bugTrackerUrl>
+    <tags>dmd d dlang druntime compiler dub gdc ldc</tags>
+    <summary>The LLVM-based D Compiler</summary>
+    <description>
+        The LDC project aims to provide a portable D programming language compiler with modern optimization and code generation capabilities.
+
+        The compiler uses the official DMD frontends to support the latest version of D2, and relies on the LLVM Core libraries for code generation.
+
+        LDC is fully Open Source; the parts of the code not taken/adapted from other projects are BSD-licensed (see the LICENSE file for details).
+
+        Please consult the D wiki for further information: http://wiki.dlang.org/LDC
+
+        D1 is no longer available; see the 'd1' Git branch for the last version supporting it.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
