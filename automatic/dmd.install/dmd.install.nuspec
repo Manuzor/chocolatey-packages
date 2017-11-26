@@ -14,7 +14,7 @@
     <projectSourceUrl>https://github.com/dlang/dmd</projectSourceUrl>
     <docsUrl>https://dlang.org/dmd-windows.html</docsUrl>
     <bugTrackerUrl>https://issues.dlang.org</bugTrackerUrl>
-    <tags>dmd d dlang druntime compiler dub gdc ldc</tags>
+    <tags>dmd d dlang druntime compiler dub gdc ldc notSilent</tags>
     <summary>dmd is the reference compiler for the D programming language.</summary>
     <description>D is a general-purpose programming language with static typing, systems-level access, and C-like syntax. It combines efficiency, control and modeling power with safety and programmer productivity.</description>
   </metadata>
