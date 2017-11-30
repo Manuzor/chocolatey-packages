@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 # Automatically Updated
-$url = 'http://downloads.dlang.org/releases/2.x/2.077.0/dmd-2.077.0.exe'
-$checksum = 'd0ea0599c3c59d1350b23eeb75ccadfc7c16df82bc6fbc132a24dfb463224af0'
+$url = 'http://downloads.dlang.org/releases/2.x/2.077.1/dmd-2.077.1.exe'
+$checksum = '06d877e0f51c2fa839c85230f48b3409d8557c32d20ddfe5254c1c4cf4878bcc'
 $checksumType = 'sha256'
 # /Automatically Updated
 
