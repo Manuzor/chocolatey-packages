@@ -18,7 +18,8 @@ function global:au_GetLatest {
     $Url = "http://downloads.dlang.org/releases/2.x/$Version/dmd-$Version.exe"
 
     $Latest = @{ URL32 = $Url; Version = $Version }
-    return $Latest
+    # return $Latest
+    return "ignore" # For now.
 }
 
 update -ChecksumFor 32
