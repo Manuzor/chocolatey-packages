@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dmd.install</id>
-    <version>2.077.1</version>
+    <version>2.078.0</version>
     <packageSourceUrl>https://github.com/Manuzor/chocolatey-packages</packageSourceUrl>
     <owners>Manuel Maier</owners>
 
