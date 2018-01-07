@@ -26,11 +26,11 @@ function global:au_GetLatest {
     $Url64 = $null
     foreach($Asset in $Json.assets)
     {
-        if($Asset.name -match "win32-msvc")
+        if($Asset.name -match "win32-msvc" -or $Asset.name -match "windows-x86")
         {
             $Url32 = $Asset.browser_download_url
         }
-        elseif($Asset.name -match "win64-msvc")
+        elseif($Asset.name -match "win64-msvc" -or $Asset.name -match "windows-x64")
         {
             $Url64 = $Asset.browser_download_url
         }
