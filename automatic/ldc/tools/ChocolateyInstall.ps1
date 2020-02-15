@@ -7,11 +7,11 @@ $packageArgs = @{
   softwareName   = 'ldc*'
 
   # Automatically Updated
-  url            = 'https://github.com/ldc-developers/ldc/releases/download/v1.19.0/ldc2-1.19.0-windows-x86.7z'
-  checksum       = 'a619cc92142fa7c36056e3e5db68a5d761eb470039f18ad489b1618d3112f576'
+  url            = 'https://github.com/ldc-developers/ldc/releases/download/v1.20.0/ldc2-1.20.0-windows-x86.7z'
+  checksum       = '39ff7408e21084161442fb95a1e077cbd136b5a88c68e046a687f9e38289173d'
   checksumType   = 'sha256'
-  url64bit       = 'https://github.com/ldc-developers/ldc/releases/download/v1.19.0/ldc2-1.19.0-windows-x64.7z'
-  checksum64     = 'e0038e94174af64726fa713aa63d0fbf5290e911905e86901e74553604eb8a6c'
+  url64bit       = 'https://github.com/ldc-developers/ldc/releases/download/v1.20.0/ldc2-1.20.0-windows-x64.7z'
+  checksum64     = '95218ef73f7cabad8139e7fd4c165b8a2d05db3be3e996526bdaab78d220f0ad'
   checksumType64 = 'sha256'
   # /Automatically Updated
 }
