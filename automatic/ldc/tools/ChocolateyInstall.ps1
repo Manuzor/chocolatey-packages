@@ -17,3 +17,14 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
+
+$Bin = Join-Path $destDir "ldc2-1.24.0-windows-x86/bin"
+$Bin64 = Join-Path $destDir "ldc2-1.24.0-windows-x64/bin"
+
+# Add ldc to PATH
+if (test-path($Bin64))
+{
+  Install-ChocolateyPath -PathToInstall $Bin64 -PathType User
+} else {
+  Install-ChocolateyPath -PathToInstall $Bin -PathType User
+}
