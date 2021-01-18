@@ -9,7 +9,7 @@ function global:au_SearchReplace {
             "(^\s+url64bit\s*=\s*)('.*')"       = "`$1'$($Latest.URL64)'"
             "(^\s+checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
             "(^\s+checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
-            "(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
+            "(^[$]version\s*=\s*)('.*')"        = "`$1'$($Latest.Version)'"
         }
         'tools\ChocolateyBeforeModify.ps1' = @{
             "(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
