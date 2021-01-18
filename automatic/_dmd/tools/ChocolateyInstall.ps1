@@ -23,3 +23,7 @@ Install-ChocolateyZipPackage @packageArgs
 
 $Bin = Join-Path -Resolve $destDir "dmd2/windows/bin"
 $Bin64 = Join-Path -Resolve $destDir "dmd2/windows/bin64"
+
+
+# Add dmd to PATH
+Install-ChocolateyPath -PathToInstall $Bin -PathType User
