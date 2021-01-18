@@ -4,7 +4,7 @@
     <id>ldc</id>
     <version>1.24.0</version>
     <packageSourceUrl>https://github.com/Manuzor/chocolatey-packages</packageSourceUrl>
-    <owners>Manuel Maier</owners>
+    <owners>Manuel Floruß</owners>
 
     <title>ldc</title>
     <authors>LDC contributors</authors>
