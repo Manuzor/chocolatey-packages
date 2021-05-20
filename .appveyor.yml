@@ -21,7 +21,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: Manuzor/chocolatey-packages
   github_api_key:
-    secure: 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
+    secure: 5GighEQI1Em4CfGPJO15s4EO16MpLHpkpZvWVXNoAZk/T6a2QN9MrvDYiNdS1N1/
 
 
   # Mail credentials - for error notifications
