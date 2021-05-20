@@ -3,16 +3,16 @@ Import-Module au
 function global:au_SearchReplace {
     @{
         'tools\ChocolateyInstall.ps1' = @{
-            "(^\s+url\s*=\s*)('.*')"            = "`$1'$($Latest.URL32)'"
-            "(^\s+checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
-            "(^\s+checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
-            "(^\s+url64bit\s*=\s*)('.*')"       = "`$1'$($Latest.URL64)'"
-            "(^\s+checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-            "(^\s+checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
-            "(^[$]version\s*=\s*)('.*')"        = "`$1'$($Latest.Version)'"
+            "(^\s+url\s*=\s*)(`".*`")"            = "`$1`"$($Latest.URL32)`""
+            "(^\s+checksum\s*=\s*)(`".*`")"       = "`$1`"$($Latest.Checksum32)`""
+            "(^\s+checksumType\s*=\s*)(`".*`")"   = "`$1`"$($Latest.ChecksumType32)`""
+            "(^\s+url64bit\s*=\s*)(`".*`")"       = "`$1`"$($Latest.URL64)`""
+            "(^\s+checksum64\s*=\s*)(`".*`")"     = "`$1`"$($Latest.Checksum64)`""
+            "(^\s+checksumType64\s*=\s*)(`".*`")" = "`$1`"$($Latest.ChecksumType64)`""
+            "(^[$]version\s*=\s*)(`".*`")"        = "`$1`"$($Latest.Version)`""
         }
         'tools\ChocolateyBeforeModify.ps1' = @{
-            "(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
+            "(^[$]version\s*=\s*)(`".*`")" = "`$1`"$($Latest.Version)`""
         }
     }
 }

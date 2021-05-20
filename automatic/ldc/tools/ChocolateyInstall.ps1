@@ -2,7 +2,7 @@
 $destDir = Get-ToolsLocation
 
 # Automatically Updated
-$version = '1.24.0'
+$version = "1.24.0"
 # /Automatically Updated
 
 $packageArgs = @{
