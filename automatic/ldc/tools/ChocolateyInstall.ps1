@@ -2,7 +2,7 @@
 $destDir = Get-ToolsLocation
 
 # Automatically Updated
-$version = "1.27.1"
+$version = "1.28.0"
 # /Automatically Updated
 
 $packageArgs = @{
@@ -11,11 +11,11 @@ $packageArgs = @{
   softwareName   = 'ldc*'
 
   # Automatically Updated
-  url            = "https://github.com/ldc-developers/ldc/releases/download/v1.27.1/ldc2-1.27.1-windows-x86.7z"
-  checksum       = "7fc62d87e11cb72b57689ede01f79076dd9cdce93ffce68f4a1194e7a3a3a2fc"
+  url            = "https://github.com/ldc-developers/ldc/releases/download/v1.28.0/ldc2-1.28.0-windows-x86.7z"
+  checksum       = "af5465b316dfb582ded4fd6f83dfa02dfdd896fad6d397cc53d098e3ba9f9281"
   checksumType   = "sha256"
-  url64bit       = "https://github.com/ldc-developers/ldc/releases/download/v1.27.1/ldc2-1.27.1-windows-x64.7z"
-  checksum64     = "9ce8ce8f50fbdce57dfa55a846eb103274bb6022ef6e2c06ed08b61fb8b5daf4"
+  url64bit       = "https://github.com/ldc-developers/ldc/releases/download/v1.28.0/ldc2-1.28.0-windows-x64.7z"
+  checksum64     = "26bb3ece7774ef70d9c7485eab5fbc182d4e74411e4a8d2f339e9b421a76f069"
   checksumType64 = "sha256"
   # /Automatically Updated
 }
