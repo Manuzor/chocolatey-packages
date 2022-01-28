@@ -39,7 +39,7 @@ function global:au_GetLatest {
         #>
         if($Asset.name -match "windows-multilib.*\.(7z|zip)$")
         {
-            $Url64 = $Asset.browser_download_url
+            $Url32 = $Url64 = $Asset.browser_download_url
         }
     }
 
