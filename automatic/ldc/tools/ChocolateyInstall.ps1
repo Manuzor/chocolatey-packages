@@ -24,13 +24,14 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$Bin = Join-Path $destDir "ldc2-$version-windows-x86/bin"
-# $Bin64 = Join-Path $destDir "ldc2-$version-windows-x64/bin"
-$Bin64 = Join-Path $destDir "ldc2-$version-windows-multilib/bin"
-
-# Add ldc to PATH
-if (test-path($Bin64)) {
-  Install-ChocolateyPath -PathToInstall $Bin64 -PathType User
-} else {
-  Install-ChocolateyPath -PathToInstall $Bin -PathType User
+$Paths = @(
+  "ldc2-$version-windows-multilib/bin";
+  "ldc2-$version-windows-x64/bin";
+  "ldc2-$version-windows-x86/bin";
+)
+foreach($Bin in $Paths) {
+  if(Test-Path $Bin) {
+    Install-ChocolateyPath -PathToInstall $Bin -PathType User
+    break
+  }
 }
