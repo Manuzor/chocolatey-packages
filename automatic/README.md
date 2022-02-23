@@ -2,7 +2,7 @@
 
 ### Force Package Resubmission
 
-Edit the $PACKAGE.nuspec (e.g. `ldc.nuspec`) and manually edit the \<version\> attribute. For example:
+Open the file `$PACKAGE.nuspec` (e.g. `ldc.nuspec`) and manually edit the `<version>` attribute. For example:
 
 ```diff
 -<version>1.28.1</version>
