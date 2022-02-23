@@ -25,9 +25,9 @@ $packageArgs = @{
 Install-ChocolateyZipPackage @packageArgs
 
 $Paths = @(
-  "ldc2-$version-windows-multilib/bin";
-  "ldc2-$version-windows-x64/bin";
-  "ldc2-$version-windows-x86/bin";
+  Join-Path $destDir "ldc2-$version-windows-multilib/bin";
+  Join-Path $destDir "ldc2-$version-windows-x64/bin";
+  Join-Path $destDir "ldc2-$version-windows-x86/bin";
 )
 foreach($Bin in $Paths) {
   if(Test-Path $Bin) {

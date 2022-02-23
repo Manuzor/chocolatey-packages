@@ -27,7 +27,7 @@ function global:au_GetLatest {
     $Url64 = $null
     foreach($Asset in $Json.assets)
     {
-        <#
+        <# NOTE: 32-bit hosts are no longer supported.
         if($Asset.name -match "win32-msvc" -or $Asset.name -match "windows-x86")
         {
             $Url32 = $Asset.browser_download_url
