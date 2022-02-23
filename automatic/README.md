@@ -1,3 +1,26 @@
+## Personal Notes
+
+### Force Package Resubmission
+
+Edit the $PACKAGE.nuspec (e.g. `ldc.nuspec`) and manually edit the \<version\> attribute. For example:
+
+```diff
+-<version>1.28.1</version>
++<version>1.28.1.20220223</version>
+```
+
+See the following link for the recommended way to create a "package fix version":
+
+https://docs.chocolatey.org/en-us/create/create-packages#package-fix-version-notation
+
+Commit your changes with a proper commit message, then create another commit message with no contents like this:
+
+```bash
+$ git commit --allow-empty -m '[PUSH $PACKAGE]'
+```
+
+And push all commits. This will cause AU to run for the specified package.
+
 ## Automatic Folder
 
 This is where you put your Chocolatey packages that are automatically packaged up by either [AU](https://chocolatey.org/packages/au) or [Ketarin](https://chocolatey.org/packages/ketarin)/[ChocolateyPackageUpdater](https://chocolatey.org/packages/chocolateypackageupdater).
