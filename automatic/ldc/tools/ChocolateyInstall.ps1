@@ -10,12 +10,11 @@ $packageArgs = @{
   unzipLocation  = $destDir
   softwareName   = 'ldc*'
 
+  <# NOTE: 32-bit hosts are no longer supported. URLs for both 32 and 64 bit will be identical #>
   # Automatically Updated
-  <# NOTE: 32-bit hosts are no longer supported.
   url            = "https://github.com/ldc-developers/ldc/releases/download/v1.28.1/ldc2-1.28.1-windows-x86.7z"
   checksum       = "4cc6c240f18f289c84143fd03ad6e205e768ae8f811f871d8e2398b4cf3d0255"
   checksumType   = "sha256"
-  #>
   url64bit       = "https://github.com/ldc-developers/ldc/releases/download/v1.28.1/ldc2-1.28.1-windows-x64.7z"
   checksum64     = "7c2a2a6028eed77e671142ed37f86d8aca3f718ced4b7362b3fe9b189fbeb865"
   checksumType64 = "sha256"
