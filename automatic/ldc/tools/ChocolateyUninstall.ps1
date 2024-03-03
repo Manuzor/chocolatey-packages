@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = "SilentlyContinue"
 
 # Automatically Updated
-$version = "1.36.0"
+$version = "1.37.0"
 # /Automatically Updated
 
 Remove-Item -Force -Recurse "$(Get-ToolsLocation)/ldc2-$version-win32-msvc"
