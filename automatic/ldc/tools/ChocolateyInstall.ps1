@@ -2,7 +2,7 @@
 $destDir = Get-ToolsLocation
 
 # Automatically Updated
-$version = "1.40.0"
+$version = "1.40.1"
 # /Automatically Updated
 
 $packageArgs = @{
@@ -12,11 +12,11 @@ $packageArgs = @{
 
   <# NOTE: 32-bit hosts are no longer supported. URLs for both 32 and 64 bit will be identical #>
   # Automatically Updated
-  url            = "https://github.com/ldc-developers/ldc/releases/download/v1.40.0/ldc2-1.40.0-windows-multilib.7z"
-  checksum       = "efa45b4f8d48d73f93347a51ba0a648806069b3a3e42f88a237788889f65b55c"
+  url            = "https://github.com/ldc-developers/ldc/releases/download/v1.40.1/ldc2-1.40.1-windows-multilib.7z"
+  checksum       = "1e18fe1d18895f6a0abeccffa0443e8b7d652c67825e12d039144a37ad5358fe"
   checksumType   = "sha256"
-  url64bit       = "https://github.com/ldc-developers/ldc/releases/download/v1.40.0/ldc2-1.40.0-windows-multilib.7z"
-  checksum64     = "efa45b4f8d48d73f93347a51ba0a648806069b3a3e42f88a237788889f65b55c"
+  url64bit       = "https://github.com/ldc-developers/ldc/releases/download/v1.40.1/ldc2-1.40.1-windows-multilib.7z"
+  checksum64     = "1e18fe1d18895f6a0abeccffa0443e8b7d652c67825e12d039144a37ad5358fe"
   checksumType64 = "sha256"
   # /Automatically Updated
 }
